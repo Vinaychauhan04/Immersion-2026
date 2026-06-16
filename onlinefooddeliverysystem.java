@@ -1,3 +1,4 @@
+// Online Food Delivery System
 class FoodItem {
 
     
@@ -6,7 +7,7 @@ class FoodItem {
     private double price;
     private int    quantity;
 
-    
+    // Constructor to initialize the food item details
     public FoodItem(int itemId, String itemName, double price, int quantity) {
         this.itemId    = itemId;
         this.itemName  = itemName;
@@ -14,12 +15,12 @@ class FoodItem {
         this.quantity  = quantity;
     }
 
-    
+    // Method to calculate the total amount for the food item
     public double calculateAmount() {
         return price * quantity;
     }
 
-    
+    // Method to display the details of the food item
     public void displayItemDetails() {
         System.out.println("Item Name : " + itemName);
         System.out.println("Price     : " + (int) price);
@@ -27,7 +28,7 @@ class FoodItem {
         System.out.println("Amount    : " + (int) calculateAmount());
     }
 
-    
+    // Getters for the food item attributes
     public String getItemName() { return itemName; }
     public double getPrice()    { return price; }
     public int    getQuantity() { return quantity; }
@@ -37,26 +38,26 @@ class FoodItem {
 
 class Customer {
 
-    
+    // Attributes to store customer details
     private int    customerId;
     private String customerName;
     private String mobileNumber;
 
-    
+    // Constructor to initialize the customer details
     public Customer(int customerId, String customerName, String mobileNumber) {
         this.customerId    = customerId;
         this.customerName  = customerName;
         this.mobileNumber  = mobileNumber;
     }
 
-    
+    // Method to display the details of the customer
     public void displayCustomerDetails() {
         System.out.println("Customer ID     : " + customerId);
         System.out.println("Customer Name   : " + customerName);
         System.out.println("Mobile Number   : " + mobileNumber);
     }
 
-    
+    // Getters for the customer attributes
     public String getCustomerName() { return customerName; }
 }
 
@@ -64,12 +65,12 @@ class Customer {
 
 public class onlinefooddeliverysystem {
 
-    
+    // Method to print a line separator for better readability
     static void line() {
         System.out.println("-----------------------");
     }
 
-    
+    // Method to print the order summary for a customer
     static void printOrderSummary(Customer customer, FoodItem[] items) {
         System.out.println("=========================================");
         System.out.println("           ORDER SUMMARY");
@@ -90,7 +91,7 @@ public class onlinefooddeliverysystem {
         line();
         System.out.println();
     }
-
+// Main method to demonstrate the functionality of the online food delivery system
     public static void main(String[] args) {
 
         
