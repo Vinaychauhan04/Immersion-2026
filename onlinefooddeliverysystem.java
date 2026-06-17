@@ -6,7 +6,7 @@ class FoodItem {
     private String itemName;
     private double price;
     private int    quantity;
-
+   
     // Constructor to initialize the food item details
     public FoodItem(int itemId, String itemName, double price, int quantity) {
         this.itemId    = itemId;
