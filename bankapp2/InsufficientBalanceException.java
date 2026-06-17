@@ -1,5 +1,8 @@
 package bankapp2;
+public class InsufficientBalanceException
+        extends Exception {
 
-public class InsufficientBalanceException {
-
+    public InsufficientBalanceException(String msg) {
+        super(msg);
+    }
 }

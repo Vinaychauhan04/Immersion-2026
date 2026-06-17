@@ -1,5 +1,9 @@
 package bankapp2;
 
-public class AccountNotFoundException {
+public class AccountNotFoundException
+        extends Exception {
 
+    public AccountNotFoundException(String msg) {
+        super(msg);
+    }
 }
