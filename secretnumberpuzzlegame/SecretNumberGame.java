@@ -1,5 +1,5 @@
 //package bankapp2.Secret Number Puzzle Game;
-package bankapp2.secretnumberpuzzlegame;
+package secretnumberpuzzlegame;
 
 import java.util.Scanner;
 
